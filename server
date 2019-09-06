@@ -1,0 +1,18 @@
+<?php
+
+/*
+ * This file is part of PHP CS Fixer.
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
+global $argv;
+if (!isset($argv[1]) || 'start' != $argv[1]) {
+    exit('Invalid Operation [' . $argv[1] . ']');
+}
+require 'vendor/autoload.php';
+$config = include 'config.php';
+
+\LCP\GC::getInstance()->set($config);
+$app = new \LCP\App($config);
+$app->start();

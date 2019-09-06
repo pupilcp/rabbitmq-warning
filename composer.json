@@ -1,0 +1,30 @@
+{
+    "name": "pupilcp/rabbitmq-warning",
+    "description": "rabbitmq服务监控预警",
+    "keywords": ["rabbitmq","mq", "监控","预警"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lcp",
+            "email": "310973780@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "ext-swoole": "*",
+        "ext-redis": ">=2.6",
+        "enqueue/amqp-ext": "^0.8",
+        "cheprasov/php-redis-client": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LCP\\": "src"
+        }
+    },
+    "repositories":[
+        {
+            "type":"vcs",
+            "url":"https://github.com/pupilcp/rabbitmq-warning"
+        }
+    ]
+}
