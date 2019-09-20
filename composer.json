@@ -13,6 +13,7 @@
         "php": ">=7.0",
         "ext-swoole": "*",
         "ext-redis": ">=2.6",
+        "ext-amqp": "*",
         "enqueue/amqp-ext": "^0.8",
         "cheprasov/php-redis-client": "*"
     },
