@@ -24,7 +24,7 @@ class Format
         //调用预警服务
         $data              = [];
         $data['title']     = '监控多次连接MQ服务器失败';
-        $data['content']   = '### <font color=#C70909 size=10 face="黑体">Error: ' . $data['title'] . '</font>' . PHP_EOL
+        $data['content']   = '### <font color=#C70909 face="黑体">Error: ' . $data['title'] . '</font>' . PHP_EOL
             . '- Host: ' . $config['host'] . PHP_EOL
             . '- User: ' . $config['login'] . PHP_EOL
             . '- Port: ' . $config['port'] . PHP_EOL
@@ -51,7 +51,7 @@ class Format
         //调用预警服务
         $data              = [];
         $data['title']     = 'MQ积压消息过多';
-        $data['content']   = '### <font color=#FF8C1C size=10 face="黑体">Notice: ' . $data['title'] . '</font>' . PHP_EOL
+        $data['content']   = '### <font color=#FF8C1C face="黑体">Notice: ' . $data['title'] . '</font>' . PHP_EOL
             . '- Host: ' . $config['host'] . PHP_EOL
             . '- User: ' . $config['login'] . PHP_EOL
             . '- Port: ' . $config['port'] . PHP_EOL
